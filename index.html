@@ -1,33 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pen</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Daily Progress</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-    <script src="./script.js"></script>
-  </body>
-</html>
-<div class="app">
-  <h1>📈 My Daily Progress</h1>
+<body>
 
-  <p>Track yourself. Improve yourself.</p>
+  <div class="app">
 
-  <hr>
+    <h1>📈 My Daily Progress</h1>
+    <p>Track yourself. Improve yourself.</p>
 
-  <h2>🏆 Today's Win</h2>
-  <textarea id="win" placeholder="Aaj maine kya achieve kiya?"></textarea>
+    <div class="card">
+      <h2>📊 Today's Progress</h2>
 
-  <h2>❌ Today's Mistake</h2>
-  <textarea id="mistake" placeholder="Aaj meri kya mistake/loss raha?"></textarea>
+      <h3>🏆 Today's Win</h3>
+      <textarea id="win" placeholder="Aaj maine kya achieve kiya?"></textarea>
 
-  <button onclick="saveProgress()">Save Today's Progress</button>
+      <h3>❌ Today's Mistake</h3>
+      <textarea id="mistake" placeholder="Aaj meri kya mistake/loss raha?"></textarea>
 
-  <h2>📊 My Progress</h2>
-  <div id="result">
-    Abhi koi progress recorded nahi hai.
+      <button onclick="saveProgress()">Save Today's Progress</button>
+    </div>
+
+    <div class="card">
+      <h2>🔥 My Streak</h2>
+      <p id="streak">0 Days</p>
+    </div>
+
+    <div class="card">
+      <h2>🎯 Areas To Improve</h2>
+
+      <p>📚 Study</p>
+      <p>🧠 Focus & Discipline</p>
+      <p>⏰ Time Management</p>
+      <p>📱 Phone Control</p>
+      <p>💪 Health</p>
+      <p>🗣️ Confidence & Communication</p>
+      <p>💡 Skills & Learning</p>
+    </div>
+
+    <div class="card">
+      <h2>📝 Latest Result</h2>
+      <div id="result">
+        Abhi koi progress recorded nahi hai.
+      </div>
+    </div>
+
   </div>
-</div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
