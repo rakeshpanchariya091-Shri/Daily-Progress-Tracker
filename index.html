@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pen</title>
+  </head>
+  <body>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+<div class="app">
+  <h1>📈 My Daily Progress</h1>
+
+  <p>Track yourself. Improve yourself.</p>
+
+  <hr>
+
+  <h2>🏆 Today's Win</h2>
+  <textarea id="win" placeholder="Aaj maine kya achieve kiya?"></textarea>
+
+  <h2>❌ Today's Mistake</h2>
+  <textarea id="mistake" placeholder="Aaj meri kya mistake/loss raha?"></textarea>
+
+  <button onclick="saveProgress()">Save Today's Progress</button>
+
+  <h2>📊 My Progress</h2>
+  <div id="result">
+    Abhi koi progress recorded nahi hai.
+  </div>
+</div>
