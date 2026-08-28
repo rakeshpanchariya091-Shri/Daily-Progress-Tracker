@@ -20,3 +20,4 @@ function saveProgress() {
   document.getElementById("win").value = "";
   document.getElementById("mistake").value = "";
 }
+}
